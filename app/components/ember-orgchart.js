@@ -1,0 +1,1 @@
+export { default } from 'ember-cli-orgchart/components/ember-orgchart';
