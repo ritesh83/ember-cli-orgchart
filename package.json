@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-orgchart",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "ember-cli addon for jquery orgchart https://github.com/bigeyex/jquery.orgChart",
   "directories": {
     "doc": "doc",
@@ -42,6 +42,7 @@
     "orgchart",
     "jquery"
   ],
+  "main": "index.js",
   "dependencies": {
     "ember-cli-babel": "^5.0.0",
     "broccoli-funnel": "^0.2.3"
