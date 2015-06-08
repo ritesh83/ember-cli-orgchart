@@ -1,25 +1,28 @@
-# Ember-cli-orgchart
+# ember-cli-orgchart
 
-This README outlines the details of collaborating on this Ember addon.
+Brings [jquery-orgchart](https://github.com/bigeyex/jquery.orgChart) functionality into your Ember app.
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+Ember CLI addons can be installed with `ember install`
 
-## Running
+  ember install ember-cli-orgchart
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+## Usage
 
-## Running Tests
+Out of the box, the bare minimum you need on the template is `data`.
 
-* `ember test`
-* `ember test --server`
+````Handlebars
+<div class="sample-orgchart">
+    {{ember-orgchart
+        data=data        
+    }}
+</div>
+````
 
-## Building
+## Demo
 
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+* Clone this repo: `git clone`
+* Install packages: `npm install` then `bower install`
+* Run `ember serve`
+* Visit the sample app at http://localhost:4200.
