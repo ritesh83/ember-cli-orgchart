@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-orgchart",
   "version": "0.0.1",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "ember-cli addon for jquery orgchart https://github.com/bigeyex/jquery.orgChart",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,7 +11,10 @@
     "build": "ember build",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ritesh83/ember-cli-orgchart.git"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
@@ -35,7 +38,9 @@
     "ember-try": "0.0.4"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "orgchart",
+    "jquery"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.0.0",
