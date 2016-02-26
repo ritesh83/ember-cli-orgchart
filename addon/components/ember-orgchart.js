@@ -5,7 +5,11 @@ export default Ember.Component.extend({
 
     didInsertElement: function() {
         var chartData = this.get('data');
-        this.$().orgChart({data: chartData});
+        var clickCallback = this.get('onClickNode');
+        this.$().orgChart({
+          data: chartData,
+          onClickNode: clickCallback
+        });
     },
 
     willDestroyElement: function() {

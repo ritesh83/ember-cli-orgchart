@@ -10,5 +10,9 @@ export default Ember.Controller.extend({
         {id: 7, name: 'Division 4', parent: 1},
         {id: 8, name: 'Division 5', parent: 1},
         {id: 5, name: 'Sub Division', parent: 3}
-    ]
+    ],
+
+    onClickNode: function(node) {
+        console.log(node);
+    }
 });
