@@ -5,14 +5,19 @@ export default Ember.Component.extend({
 
     didInsertElement: function() {
         var chartData = this.get('data');
-        var clickCallback = this.get('onClickNode');
+        var clickCallback = this.get('clickedNodeAction');
+
         this.$().orgChart({
-          data: chartData,
-          onClickNode: clickCallback
+            data: chartData,
+            onClickNode: clickCallback.bind(this)
         });
     },
 
     willDestroyElement: function() {
         this.$().orgChart('destroy');
+    },
+
+    clickedNodeAction(node) {
+        this.sendAction('onClickNode', node);
     }
 });
