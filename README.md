@@ -15,7 +15,8 @@ Out of the box, the bare minimum you need on the template is `data`.
 ````Handlebars
 <div class="sample-orgchart">
     {{ember-orgchart
-        data=data        
+        data=data
+        onClickNode="onClickNodeActionHandler"        
     }}
 </div>
 ````
