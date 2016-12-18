@@ -9,12 +9,10 @@ Brings [jquery-orgchart](https://github.com/bigeyex/jquery.orgChart) functionali
 ## Usage
 
 ```Handlebars
-<div class="sample-orgchart">
-    {{ember-orgchart
-        data=chartData
-        onClickNode="onClickNodeActionHandler"        
-    }}
-</div>
+{{ember-orgchart
+    data=chartData
+    onClickNode="onClickNodeActionHandler"        
+}}
 ```
 
 ```js
@@ -28,6 +26,12 @@ chartData: [
     {id: 8, name: 'Division 5', parent: 1},
     {id: 5, name: 'Sub Division', parent: 3}
 ]
+
+actions: {
+    onClickNodeActionHandler: function(node) {
+        //
+    }
+}
 ```
     
 ## Demo
