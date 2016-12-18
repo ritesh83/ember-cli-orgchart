@@ -4,23 +4,32 @@ Brings [jquery-orgchart](https://github.com/bigeyex/jquery.orgChart) functionali
 
 ## Installation
 
-Ember CLI addons can be installed with `ember install`
-
-  ember install ember-cli-orgchart
+    ember install ember-cli-orgchart
 
 ## Usage
 
-Out of the box, the bare minimum you need on the template is `data`.
-
-````Handlebars
+```Handlebars
 <div class="sample-orgchart">
     {{ember-orgchart
-        data=data
+        data=chartData
         onClickNode="onClickNodeActionHandler"        
     }}
 </div>
-````
+```
 
+```js
+chartData: [
+    {id: 1, name: 'Acme Organization', parent: 0},
+    {id: 2, name: 'CEO Office', parent: 1},
+    {id: 3, name: 'Division 1', parent: 1},
+    {id: 4, name: 'Division 2', parent: 1},
+    {id: 6, name: 'Division 3', parent: 1},
+    {id: 7, name: 'Division 4', parent: 1},
+    {id: 8, name: 'Division 5', parent: 1},
+    {id: 5, name: 'Sub Division', parent: 3}
+]
+```
+    
 ## Demo
 
 * Clone this repo: `git clone`
