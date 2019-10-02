@@ -8,7 +8,7 @@ export default Ember.Component.extend({
         var clickCallback = this.get('clickedNodeAction');
 
         if (Ember.isPresent(chartData)) {
-            this.$().orgChart({
+            this.element.addEventListener({
                 data: chartData,
                 onClickNode: clickCallback.bind(this)
             });
@@ -16,7 +16,7 @@ export default Ember.Component.extend({
     },
 
     willDestroyElement: function() {
-        this.$().orgChart('destroy');
+        this.element.addEventListener('destroy');
     },
 
     clickedNodeAction(node) {
